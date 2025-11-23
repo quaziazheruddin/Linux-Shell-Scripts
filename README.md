@@ -1,27 +1,26 @@
-SSH Key Copy Script – Quick README
+**Shell Script Repository**
 
-This script copies your local id_rsa.pub SSH key to multiple servers
+This repository contains a collection of useful shell scripts for automation and system tasks.
+Each script is designed to be easy to use and modify as needed.
 
-Add all target servers (one per line) in a file named hosts_list.txt
+**How to Use**
 
-Make sure your public key exists: ~/.ssh/id_rsa.pub
+Clone the repository to your system.
 
-If not use command for generate: ssh-keygen -t rsa -b 4096
+Give execution permission to any script using chmod +x script.sh.
 
-Install sshpass before running the script
+Run the script directly from the terminal.
 
-If not use below command to install: sudo yum install sshpass -y
+**Requirements**
 
-Give execute permission: chmod +x copy_ssh_keys.sh
+Linux system with Bash
 
-Run the script: ./copy_ssh_keys.sh
+Basic packages may be required depending on the script
 
-Enter your username and password when prompted.
+**Purpose**
 
-Script creates .ssh directory on remote hosts if missing.
+The goal of this repository is to provide simple and effective shell scripts for daily operational and automation needs.
 
-Appends your key into ~/.ssh/authorized_keys on each server.
+**Author**
 
-After completion, you can log in passwordlessly using SSH.
-
-Ensure the remote servers allow password authentication temporarily.
+Quazi Azheruddin
